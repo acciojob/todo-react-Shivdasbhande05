@@ -5,7 +5,7 @@ function ToDoItem({ toDoItem,onDelete }) {
   return (
     <>
       <div>{toDoItem}</div>
-      <button onClick={toDoItem}>Delete</button>
+      <button onClick={() => onDelete(toDoItem)}>Delete</button>
     </>
   );
 }
