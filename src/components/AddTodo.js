@@ -14,7 +14,7 @@ function AddToDo({ handleNewItem }) {
   return (
     <>
       <input type="text" onChange={handleTodoName}/>
-      <button onClick={handleAddClicked}>AddTodo</button>
+      <button onClick={handleAddClicked}>Add Todo</button>
     </>
   );
 }
