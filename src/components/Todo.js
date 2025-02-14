@@ -3,9 +3,12 @@ import ToDoItem from "./ToDoItem";
 
 function ToDo({ toDoItems, onDelete }) {
   return (
-    <>
+    <> <ul>
+    </ul>
       {toDoItems.map((item) => (
-        <ToDoItem toDoItem={item} onDelete={onDelete}/>
+        <li>
+            <ToDoItem toDoItem={item.name} onDelete={onDelete}/>
+        </li>
       ))}
     </>
   );
