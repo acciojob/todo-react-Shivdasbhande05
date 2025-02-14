@@ -10,7 +10,7 @@ const App = () => {
   let [toDoItems, setToDoItems] = useState([]);
 
   function handleNewItem(itemName){
-    let newItem = [...toDoItems,{name : itemName}]
+    let newItem = [...toDoItems,{ name : itemName }]
     setToDoItems(newItem);
   }
 
@@ -26,6 +26,7 @@ const App = () => {
         <Heading/>
         <AddToDo handleNewItem={handleNewItem}/>
         <ToDo toDoItems={toDoItems} onDelete={handleDelete}/>
+        <button></button>
     </div>
   )
 }
