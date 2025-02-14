@@ -26,7 +26,6 @@ const App = () => {
         <Heading/>
         <AddToDo handleNewItem={handleNewItem}/>
         <ToDo toDoItems={toDoItems} onDelete={handleDelete}/>
-        <button></button>
     </div>
   )
 }
