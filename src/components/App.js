@@ -9,12 +9,12 @@ const App = () => {
 
   let [toDoItems, setToDoItems] = useState([]);
 
-  function handleNewItem(){
+  function handleNewItem(itemName){
     let newItem = [...toDoItems,{name : itemName}]
     setToDoItems(newItem);
   }
 
-  function handleDelete(){
+  function handleDelete(itemName){
     let newItems = toDoItems.filter(item => item.name !== itemName);
 
     setToDoItems(newItems);
