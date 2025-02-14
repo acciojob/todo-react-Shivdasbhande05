@@ -4,8 +4,8 @@ function ToDoItem({ toDoItem,onDelete }) {
 
   return (
     <>
-      <div>{toDoItem.name}</div>
-      <button onClick={toDoItem.name}>Delete</button>
+      <div>{toDoItem}</div>
+      <button onClick={toDoItem}>Delete</button>
     </>
   );
 }
